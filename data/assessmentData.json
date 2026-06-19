@@ -1,0 +1,217 @@
+{
+  "buildingTypes": [
+    {
+      "id": "gruenderzeit",
+      "name": "Gründerzeit",
+      "period": "1880–1920",
+      "description": "Mehrgeschossiger Wohnungsbau mit Stuckfassade und hohen Räumen"
+    },
+    {
+      "id": "wiederaufbau",
+      "name": "Wiederaufbau",
+      "period": "1950–1965",
+      "description": "Zweckmäßige Nachkriegsarchitektur mit massiven Außenwänden"
+    },
+    {
+      "id": "plattenbau",
+      "name": "Plattenbau (Serienbau)",
+      "period": "1970–1990",
+      "description": "Großflächige Wohnbauten mit Betonfertigteilstruktur"
+    },
+    {
+      "id": "office-60s-70s",
+      "name": "Bürobau 1960er/70er",
+      "period": "1960–1975",
+      "description": "Moderne Bürogebäude mit Glasfassade und Klimatechnik"
+    },
+    {
+      "id": "office-80s-90s",
+      "name": "Bürobau 1980er/90er",
+      "period": "1980–2000",
+      "description": "Modernisierte Bürogebäude mit verbesserten Systemen"
+    }
+  ],
+  "renovationGoals": [
+    {
+      "id": "geg-standard",
+      "name": "GEG-Mindeststandard",
+      "description": "Einhaltung der Gebäudeenergiegesetzes (40 % Einsparung)"
+    },
+    {
+      "id": "effizenzhaus-70",
+      "name": "Effizienzhaus 70/55",
+      "description": "KfW-Förderstandard mit hoher Energieeffizienz"
+    },
+    {
+      "id": "denkmalvertraglich",
+      "name": "Denkmalverträglich",
+      "description": "Erhaltung historischer Substanz mit minimalem Eingriff"
+    },
+    {
+      "id": "office-residential",
+      "name": "Büro → Wohnen",
+      "description": "Umnutzung zu Wohnraum mit angepasstem Schnitt"
+    }
+  ],
+  "results": {
+    "gruenderzeit": {
+      "geg-standard": {
+        "bestandskennwerte": {
+          "u_value": "1.2–1.5 W/m²K (Außenwand)",
+          "energieverbrauch": "~250 kWh/m²a"
+        },
+        "massnahmen": [
+          "Dach sanieren (Priorität 1: höchste Wärmeverluste)",
+          "Fenster austauschen (1.3 W/m²K)",
+          "Innendämmung Außenwand (30–50 mm)",
+          "Heizungserneuerung"
+        ],
+        "risiken": [
+          "Holzbalkenköpfe in Außenwänden (feuchte- und schimmelanfällig)",
+          "Fensterlaibungen und Sturzbereiche",
+          "Schornstein-Durchdringungen"
+        ],
+        "kosten": "€ 800–1.200/m² BGF",
+        "bauzeit": "6–12 Monate",
+        "foerderungen": "KfW 262 (max. 48.000 € pro Wohneinheit)"
+      },
+      "effizenzhaus-70": {
+        "bestandskennwerte": {
+          "u_value": "0.8–1.0 W/m²K (Außenwand)",
+          "energieverbrauch": "~100 kWh/m²a"
+        },
+        "massnahmen": [
+          "Dach sanieren (Priorität 1)",
+          "Außendämmung (80–120 mm WDVS)",
+          "Fenster austausch (0.8 W/m²K)",
+          "Heizung + Warmwasser (erneuerbarer Energie)",
+          "Lüftung (Wärmerückgewinnung)"
+        ],
+        "risiken": [
+          "Sockelbereich (Kapillaren, feuchte)",
+          "Fassade im Bestand: Putzrisse, Feuchte prüfen",
+          "Dachraum-Zustiegsmöglichkeiten nach Dämmung?"
+        ],
+        "kosten": "€ 1.200–1.800/m² BGF",
+        "bauzeit": "10–15 Monate",
+        "foerderungen": "KfW 261 (max. 120.000 € pro Wohneinheit)"
+      },
+      "denkmalvertraglich": {
+        "bestandskennwerte": {
+          "u_value": "Fassade: 0.6–1.0 W/m²K (Denkmalschutz-gerecht)",
+          "energieverbrauch": "~150 kWh/m²a"
+        },
+        "massnahmen": [
+          "Innendämmung (Wand + Decke, max. 100 mm)",
+          "Historische Fenster: Instandsetzung + Dichtung",
+          "Heizungserneuerung",
+          "Dach: Dämmung nur von innen"
+        ],
+        "risiken": [
+          "Stuckfassade: Feuchtemanagement kritisch",
+          "Historische Fenster: Kondenswasserneigung",
+          "Kunsthistorische Bewertung erforderlich"
+        ],
+        "kosten": "€ 600–1.000/m² BGF",
+        "bauzeit": "4–8 Monate",
+        "foerderungen": "KfW 262 (Sonderkondition Denkmal)"
+      },
+      "office-residential": {
+        "bestandskennwerte": {
+          "typ": "Umnutzung problematisch (Raumhöhe, Schnitt)",
+          "raum_hoehe": "2.8–3.5 m (ggf. ok nach Dämmung)"
+        },
+        "massnahmen": [
+          "Umplanung: Schnitt für Wohnungen",
+          "Außenwand sanieren (Effizienzhaus 55 anstreben)",
+          "Bad/Küche neu"
+        ],
+        "risiken": [
+          "Brandschutz: Treppenhaus neue Anforderungen",
+          "Schalldämmung: Innenwände",
+          "Barrierefreiheit: Aufzug notwendig"
+        ],
+        "kosten": "€ 1.500–2.500/m² BGF",
+        "bauzeit": "14–24 Monate",
+        "foerderungen": "KfW 261 (Umnutzung wird oft akzeptiert)"
+      }
+    },
+    "wiederaufbau": {
+      "geg-standard": {
+        "bestandskennwerte": {
+          "u_value": "1.5–2.0 W/m²K",
+          "energieverbrauch": "~280 kWh/m²a"
+        },
+        "massnahmen": [
+          "Dach sanieren + Dämmung",
+          "Fenster (1.3 W/m²K)",
+          "Innendämmung oder WDVS",
+          "Heizung"
+        ],
+        "risiken": [
+          "Feuchte in massiven Wänden",
+          "Statik vor Außendämmung prüfen",
+          "Schwamm- und Holzschutzprüfung"
+        ],
+        "kosten": "€ 850–1.300/m² BGF",
+        "bauzeit": "6–12 Monate",
+        "foerderungen": "KfW 262"
+      },
+      "effizenzhaus-70": {
+        "bestandskennwerte": {
+          "u_value": "0.8–1.0 W/m²K",
+          "energieverbrauch": "~120 kWh/m²a"
+        },
+        "massnahmen": [
+          "WDVS (100–150 mm)",
+          "Dach + Dämmung",
+          "Fenster (0.8 W/m²K)",
+          "Heizung erneuerbarer Energie"
+        ],
+        "risiken": [
+          "Sockel: Wasserschaden-Schutz",
+          "Erdgeschoss-Feuchte vor Außendämmung sanieren"
+        ],
+        "kosten": "€ 1.300–1.900/m² BGF",
+        "bauzeit": "10–16 Monate",
+        "foerderungen": "KfW 261"
+      },
+      "denkmalvertraglich": {
+        "bestandskennwerte": {
+          "u_value": "0.6–0.9 W/m²K (ohne Außenfassade)",
+          "energieverbrauch": "~160 kWh/m²a"
+        },
+        "massnahmen": [
+          "Innendämmung (100 mm)",
+          "Dach innen dämmen",
+          "Fenster: Instandsetzung + Dichtung"
+        ],
+        "risiken": [
+          "Innendämmung + Möblierung: Taupunkt",
+          "Raumhöhe reduziert sich leicht"
+        ],
+        "kosten": "€ 700–1.100/m² BGF",
+        "bauzeit": "6–10 Monate",
+        "foerderungen": "KfW 262 Denkmal"
+      },
+      "office-residential": {
+        "bestandskennwerte": {
+          "raum_hoehe": "2.5–3.0 m (ok für Wohnen)",
+          "schnitt": "Standard-Nachkrieg (realisierbar)"
+        },
+        "massnahmen": [
+          "Dach + Fassade sanieren (EH 55)",
+          "Umplanung: 1–4-Zimmer Wohnungen",
+          "Neubäder + Küchen"
+        ],
+        "risiken": [
+          "Brandschutz: Treppenhaus neu bewerten",
+          "Schallschutz: Innenwände ertüchtigen"
+        ],
+        "kosten": "€ 1.400–2.200/m² BGF",
+        "bauzeit": "12–20 Monate",
+        "foerderungen": "KfW 261"
+      }
+    }
+  }
+}
